@@ -1,0 +1,79 @@
+//-------------GENERAL------------//
+body {
+  background-color: $--primary-white-color;
+  color: $--primary-text-color;
+  font-family: $font-family;
+  letter-spacing: 0.03em;
+}
+
+.container {
+  display: flex;
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: $--primary-white-color;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.flex-type {
+  display: flex;
+
+  .link {
+    display: inline-flexbox;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+%block-state {
+  display: block;
+  text-align: center;
+  margin-top: 94px;
+}
+
+%card-interim-margin {
+  margin-left: 30px;
+}
+
+.shell {
+  display: block;
+  margin-right: 10px;
+}
+
+%clients-logo-transition {
+  fill: $--primary-icon-color;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%social-block-style {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  transition: background-color 250ms $timing-function;
+}
+
+%social-link-style {
+  display: block;
+  height: 20px;
+  width: 20px;
+  fill: $--primary-icon-color;
+}

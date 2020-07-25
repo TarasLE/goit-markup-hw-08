@@ -1,0 +1,17 @@
+%button-style {
+  color: $--primary-white-color;
+  background-color: $--text-accent-color;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border: none;
+
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px 32px;
+  border-radius: 4px;
+  margin-top: 0;
+  margin-bottom: 200px;
+}
