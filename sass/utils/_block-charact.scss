@@ -5,17 +5,21 @@ body {
   font-family: $font-family;
   letter-spacing: 0.03em;
 }
-
+// HT8
 .container {
-  display: flex;
-  width: 1170px;
+  // display: inline-flex;
+  // width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   background-color: $--primary-white-color;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
+  // margin-top: 0;
+  // margin-bottom: 0;
+
+  @media (min-width: 480px) {
+    width: 480px;
+  }
 }
 
 .flex-type {
