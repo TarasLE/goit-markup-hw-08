@@ -1640,6 +1640,11 @@ ul {
 
 .location {
   display: block;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .location .text {
@@ -1651,7 +1656,7 @@ ul {
 
 .contacts {
   margin-bottom: 28px;
-  margin-right: 69px;
+  text-align: center;
 }
 
 .contacts .link {
@@ -1679,7 +1684,7 @@ ul {
 }
 
 .connect {
-  margin-right: 94px;
+  text-align: center;
 }
 
 .connect .subtitle {
@@ -1702,12 +1707,6 @@ ul {
   background-color: #2196f3;
 }
 
-.connect .flex-type {
-  margin-top: 20;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
 .subscribe {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1722,6 +1721,15 @@ ul {
   display: block;
   padding: 0;
   margin-top: 0;
+}
+
+.subscribe .flex-type {
+  display: flexbox;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .email-button {
@@ -1795,16 +1803,5 @@ ul {
 .footer-button:hover .icon-send,
 .footer-button:focus .icon-send {
   fill: #212121;
-}
-
-.developed .text {
-  background-color: #2f303a;
-  color: rgba(255, 255, 255, 0.3);
-  font-size: 12x;
-  line-height: 2;
-  padding-top: 18px;
-  padding-bottom: 21px;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */
