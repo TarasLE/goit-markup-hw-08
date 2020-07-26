@@ -16,13 +16,16 @@
 }
 
 .contacts {
-  // display: inline-block;
-  // align-items: center;
-  justify-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .page-logo {
   border: 1px solid;
+  // align-items: baseline;
+  // justify-content: baseline;
+
   // display: inline-block;
 
   // border: 1px solid tomato;
@@ -34,43 +37,65 @@
     justify-content: space-between;
   }
 
-  .mobile-menu-button {
-    display: inline-flex;
-    align-content: center;
-    justify-content: center;
-    // align-items: center;
-    // justify-items: center;
-    padding: 0px;
-    margin: 0px;
-    border: none;
-    background-color: transparent;
-  }
+  // @media screen and (min-width: 768px) {
+  //   .flex-type {
+  //     align-items: flex-end;
+
+  //     justify-content: flex-end;
+  //   }
+  // }
 }
 
 .menu-container {
-  display: none;
-  flex-direction: column;
-
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-
-  border: 1px solid;
+  // flex-direction: column;
   // background-color: tomato;
   // padding: 20px;
-  align-items: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  margin-right: auto;
-  margin-left: auto;
+  // border: 1px solid;
 
   &.is-open {
     display: block;
   }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    border: 1px solid;
+
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    // flex-direction: row;
+
+    // padding: 0;
+    // margin-top: 0;
+    // align-items: flex-end;
+    justify-items: center;
+    // flex-direction: row;
+    height: 100%;
+  }
 }
 
 .mobile-menu-button {
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+  // align-items: center;
+  // justify-items: center;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  background-color: transparent;
+
   .icon-close-mobile-menu {
     display: none;
   }
@@ -82,11 +107,16 @@
   &.is-open .icon-mobile-menu {
     display: none;
   }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .site-auth {
   padding: 0;
   text-align: center;
+  // border: 1px solid;
 
   // margin-left: auto;
   // margin-right: auto;
@@ -112,6 +142,42 @@
   .text {
     line-height: 1.14;
   }
+
+  @media screen and (min-width: 768px) {
+    // display: flexbox;
+    // height: 100%;
+    // padding-top: 10px;
+    // flex-wrap: wrap;
+    // padding-top: 21px;
+    // padding-bottom: 0;
+    // margin-bottom: 0;
+    text-align: start;
+    // text-justify: auto;
+    // align-content: center;
+    // align-items: center;
+    // justify-content: flex-end;
+    margin-left: 84px;
+    // display: flex;
+
+    // .text {
+    //   line-height: 5.71;
+    // }
+
+    & :not(:first-child) {
+      padding-top: 10px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    margin-left: 305px;
+
+    & :not(:first-child) {
+      padding-top: 0px;
+      padding-left: 30px;
+    }
+  }
 }
 
 .site-nav {
@@ -121,6 +187,7 @@
   // margin-left: auto;
   // margin-right: auto;
   // margin-left: 0;
+  // border: 1px solid;
   text-align: center;
   @extend %nav-style;
 
@@ -160,6 +227,31 @@
     transform: scale(1);
     transition: transform 250ms $timing-function;
   }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    height: 100%;
+    // line-height: 5.71;
+    align-items: flex-end;
+    justify-items: center;
+    padding-bottom: 0;
+    // margin-left: 50px;
+
+    :not(:last-child) {
+      padding-bottom: 0;
+      padding-right: 50px;
+    }
+
+    .link {
+      display: flex;
+      height: 79px;
+      // line-height: 4;
+      position: relative;
+      color: $--text-title-color;
+      align-content: center;
+      justify-content: center;
+    }
+  }
 }
 
 .logo {
@@ -171,6 +263,7 @@
   letter-spacing: 0.03em;
   font-family: $font-family-logo;
   display: inline-block;
+  // border: 1px solid;
   // padding-top: 24px;
   // padding-bottom: 25px;
   // padding-left: 15px;
@@ -180,6 +273,15 @@
 
   .page-header &:hover {
     color: $--text-accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    // padding-top: 0;
+    // padding-bottom: 0;
+    // margin-top: 26px;
+    // margin-bottom: 26px;
   }
 }
 
