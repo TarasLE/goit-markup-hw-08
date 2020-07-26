@@ -971,9 +971,19 @@ ul {
   }
 }
 
+.duties {
+  margin-top: 0;
+}
+
 .duties .title {
   margin-top: 0;
   margin-bottom: 50px;
+}
+
+.duties .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .duties .subtitle {
@@ -1014,6 +1024,12 @@ ul {
 
 .duties .duties-card.design {
   background-image: url(../img/display.jpg);
+}
+
+@media (max-width: 1199px) {
+  .duties {
+    display: none;
+  }
 }
 
 .team {
