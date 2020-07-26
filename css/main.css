@@ -413,7 +413,7 @@ img {
   margin-top: 60px;
 }
 
-.duties .duties-card:not(:first-child), .clients-card:not(:first-child) {
+.duties .duties-card:not(:first-child) {
   margin-left: 30px;
 }
 
@@ -1222,8 +1222,57 @@ ul {
 }
 
 .clients .title {
+  margin-top: 60px;
+  margin-bottom: 0px;
+  font-size: 28px;
+  line-height: 1.17;
+}
+
+.clients .container {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 1200px) {
+  .clients .container {
+    margin-bottom: 94px;
+  }
+}
+
+.clients .card {
+  width: calc((100% - 30px) / 2);
+  margin-top: 30px;
+}
+
+.clients .card:nth-child(odd) {
+  margin-right: 30px;
+}
+
+@media (min-width: 768px) {
+  .clients .card {
+    width: calc((100% - 60px) / 3);
+  }
+  .clients .card:nth-child(n) {
+    margin-right: 30px;
+    margin-top: 30px;
+  }
+  .clients .card:nth-child(3n + 3) {
+    margin-right: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .clients .card {
+    width: calc((100% - 150px) / 6);
+  }
+  .clients .card:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .clients .logo-1 {
@@ -1266,7 +1315,6 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -1312,10 +1360,6 @@ ul {
 .clients-card:hover .logo-6,
 .clients-card:focus .logo-6 {
   fill: #2196f3;
-}
-
-.card:not(:first-child) {
-  margin-left: 30px;
 }
 
 .backdrop {

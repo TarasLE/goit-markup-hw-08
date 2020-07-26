@@ -338,8 +338,69 @@
   @extend %block-state;
 
   .title {
+    margin-top: 60px;
+    margin-bottom: 0px;
+    font-size: 28px;
+    line-height: 1.17;
+  }
+
+  .container {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (min-width: 1200px) {
+      margin-bottom: 94px;
+    }
+  }
+
+  .card {
+    width: calc((100% - 30px) / 2);
+    margin-top: 30px;
+    // display: block;
+    // width: 210px;
+
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+
+    @media (min-width: 768px) {
+      width: calc((100% - 60px) / 3);
+
+      // &:nth-child(n) {
+      //   margin: 0px;
+      // }
+
+      &:nth-child(n) {
+        margin-right: 30px;
+        margin-top: 30px;
+      }
+
+      &:nth-child(3n + 3) {
+        margin-right: 0px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      width: calc((100% - 150px) / 6);
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+
+      // &:nth-child(n) {
+      //   margin: 0px;
+      // }
+
+      // &:nth-child(n) {
+      //   margin-right: 30px;
+      //   margin-top: 30px;
+      // }
+
+      // &:nth-child(3n + 3) {
+      //   margin-right: 0px;
+      // }
+    }
   }
 
   .logo-1 {
@@ -381,18 +442,21 @@
 
 .clients-card {
   display: flex;
+  // flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  // width: calc(100%) / 2;
+  // width: 210px;
+  // width: 170px;
   height: 90px;
   border: 1px solid $--primary-icon-color;
   border-radius: 4px;
   transform: scale(1);
   transition: border 250ms $timing-function, transform 250ms $timing-function;
 
-  &:not(:first-child) {
-    @extend %card-interim-margin;
-  }
+  // &:not(:first-child) {
+  //   @extend %card-interim-margin;
+  // }
 
   &:hover {
     border: 1px solid $--text-accent-color;
@@ -423,9 +487,9 @@
   }
 }
 
-.card:not(:first-child) {
-  margin-left: 30px;
-}
+// .card:not(:first-child) {
+//   margin-left: 30px;
+// }
 
 //-------------MODAL-BLOCK------------//
 .backdrop {
