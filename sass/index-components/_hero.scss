@@ -1,5 +1,5 @@
 .hero-container {
-  max-width: 1600px;
+  // max-width: 1600px;
   display: block;
   text-align: center;
   // justify-content: center;
@@ -10,13 +10,17 @@
   background-image: $--hero-background-image-gradient,
     url(../img/header_mobile.jpg);
   background-repeat: no-repeat;
-  background-position: center top;
-  // background-size: contain;
+  background-position: center center;
+  // background-size: 100%;
 
   @media (min-resolution: 2dppx) {
     background-image: $--hero-background-image-gradient,
       url(../img/header_mobile@2x.jpg);
     border: solid tomato;
+    // background-size: min($numbers: 480px);
+    background-size: min($numbers: 480px);
+    // width: 100%;
+    // height: auto;
   }
 
   @media (min-width: 768px) {
@@ -27,6 +31,7 @@
       background-image: $--hero-background-image-gradient,
         url(../img/header_tablet@2x.jpg);
       border: solid tomato;
+      background-size: max($numbers: 768px);
     }
   }
 
@@ -38,11 +43,14 @@
       background-image: $--hero-background-image-gradient,
         url(../img/header_desktop@2x.jpg);
       border: solid tomato;
+      // background-size: cover;
+      background-size: max($numbers: 1600px);
     }
   }
 }
 
 .hero-title {
+  // display: block;
   color: $--primary-white-color;
   font-style: normal;
   font-weight: 900;

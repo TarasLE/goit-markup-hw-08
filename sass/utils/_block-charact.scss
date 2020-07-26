@@ -4,6 +4,8 @@ body {
   color: $--primary-text-color;
   font-family: $font-family;
   letter-spacing: 0.03em;
+  // margin-right: auto;
+  // margin-left: auto;
 }
 // HT8
 .container {
@@ -23,6 +25,8 @@ body {
 
   @media (min-width: 768px) {
     width: 738px;
+    // margin-right: -45px;
+    //   margin-left: -15px;
   }
 
   @media (min-width: 1200px) {

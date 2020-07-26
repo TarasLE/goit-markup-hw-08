@@ -9,9 +9,10 @@
     @media (min-width: 768px) {
       // padding-left: 0;
       // padding-left: 0;
-      width: 768px;
+      width: 738px;
       display: flex;
       flex-wrap: wrap;
+      margin-top: 60px;
     }
 
     @media (min-width: 1200px) {
@@ -138,14 +139,32 @@
 
     &.desktop {
       background-image: url(../img/laptop.jpg);
+
+      @media (min-resolution: 2dppx) {
+        background-image: url(../img/laptop@2x.jpg);
+        border: solid tomato;
+        background-size: contain;
+      }
     }
 
     &.mobile {
       background-image: url(../img/phone.jpg);
+
+      @media (min-resolution: 2dppx) {
+        background-image: url(../img/phone@2x.jpg);
+        border: solid tomato;
+        background-size: contain;
+      }
     }
 
     &.design {
       background-image: url(../img/display.jpg);
+
+      @media (min-resolution: 2dppx) {
+        background-image: url(../img/display@2x.jpg);
+        border: solid tomato;
+        background-size: contain;
+      }
     }
 
     &:not(:first-child) {
