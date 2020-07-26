@@ -407,7 +407,7 @@ img {
   overflow: hidden;
 }
 
-.duties, .team, .clients {
+.duties, .clients {
   display: block;
   text-align: center;
   margin-top: 60px;
@@ -892,8 +892,8 @@ ul {
 }
 
 .advantage .container {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 @media (min-width: 768px) {
@@ -904,7 +904,6 @@ ul {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-top: 60px;
   }
 }
 
@@ -955,7 +954,7 @@ ul {
 
 @media (min-width: 768px) {
   .advantage-card {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 30px) / 2);
   }
   .advantage-card:nth-child(odd) {
     margin-right: 15px;
@@ -993,6 +992,13 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (min-width: 1200px) {
+  .duties .container {
+    margin-top: 0;
+    margin-bottom: 94px;
+  }
 }
 
 .duties .subtitle {
@@ -1067,6 +1073,7 @@ ul {
 
 .team {
   background-color: #f5f4fa;
+  text-align: center;
 }
 
 .team .container {
@@ -1077,11 +1084,37 @@ ul {
   margin-top: 30px;
 }
 
+@media (min-width: 768px) {
+  .team .container {
+    width: 738px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team .container {
+    width: 1170px;
+    margin-top: 50px;
+    margin-bottom: 94px;
+    padding-bottom: 0;
+  }
+}
+
 .team .title {
   display: inline-block;
   margin-top: 60px;
   margin-bottom: 0;
   font-size: 28px;
+}
+
+@media (min-width: 1200px) {
+  .team .title {
+    margin-top: 94px;
+  }
 }
 
 .team .text {
@@ -1145,6 +1178,37 @@ ul {
         -ms-flex-pack: center;
             justify-content: center;
     justify-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .team-card {
+    width: calc((100% - 30px) / 2);
+    margin-top: 30px;
+  }
+  .team-card:nth-child(odd) {
+    margin-right: 15px;
+  }
+  .team-card:nth-child(even) {
+    margin-left: 15px;
+  }
+  .team-card:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
+  .team-card:nth-child(-n + 2) {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-card {
+    width: calc((100% - 90px) / 4);
+  }
+  .team-card:nth-child(n) {
+    margin: 0px;
+  }
+  .team-card:not(:first-child) {
+    margin-left: auto;
   }
 }
 
