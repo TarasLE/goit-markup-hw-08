@@ -401,13 +401,13 @@ body {
   overflow: hidden;
 }
 
-.advantage, .duties, .team, .clients {
+.duties, .team, .clients {
   display: block;
   text-align: center;
-  margin-top: 94px;
+  margin-top: 60px;
 }
 
-.advantage-card:not(:first-child), .duties .duties-card:not(:first-child), .team-card:not(:first-child), .clients-card:not(:first-child) {
+.duties .duties-card:not(:first-child), .team-card:not(:first-child), .clients-card:not(:first-child) {
   margin-left: 30px;
 }
 
@@ -813,7 +813,6 @@ ul {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../img/header_mobile.jpg);
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: contain;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
@@ -839,6 +838,21 @@ ul {
   }
 }
 
+@media (min-width: 1200px) {
+  .hero-container {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../img/header_desktop.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../img/header_desktop.jpg);
+  }
+}
+
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../img/header_desktop@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../img/header_desktop@2x.jpg);
+    border: solid tomato;
+  }
+}
+
 .hero-title {
   color: #ffffff;
   font-style: normal;
@@ -847,9 +861,15 @@ ul {
   line-height: 1.61;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  padding-top: 112px;
+  padding-top: 118px;
   margin-top: 0;
   margin-bottom: 30px;
+}
+
+@media (min-width: 1200px) {
+  .hero-title {
+    padding-top: 200px;
+  }
 }
 
 .hero-button:hover, .hero-button:focus {
@@ -857,9 +877,40 @@ ul {
   outline: none;
 }
 
+@media (min-width: 1200px) {
+  .hero-button {
+    margin-bottom: 200px;
+  }
+}
+
 .advantage .container {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .advantage .container {
+    width: 768px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantage .container {
+    width: 1170px;
+    margin-top: 94px;
+    margin-bottom: 94px;
+  }
+}
+
+.advantage .subtitle {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .icon-advantage {
@@ -872,7 +923,6 @@ ul {
 }
 
 .advantage-card {
-  width: calc((100% -120px) / 4);
   text-align: left;
 }
 
@@ -884,6 +934,41 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.advantage-card:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.advantage-card .text {
+  margin-bottom: 0px;
+}
+
+@media (min-width: 768px) {
+  .advantage-card {
+    width: calc((100% - 60px) / 2);
+  }
+  .advantage-card:nth-child(odd) {
+    margin-right: 15px;
+  }
+  .advantage-card:nth-child(even) {
+    margin-left: 15px;
+  }
+  .advantage-card:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantage-card {
+    width: calc((100% - 90px) / 4);
+  }
+  .advantage-card:nth-child(n) {
+    margin: 0;
+  }
+  .advantage-card:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 
 .duties .title {
