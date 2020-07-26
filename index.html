@@ -62,7 +62,7 @@
                 </ul>
               </div>
 
-              <div class="contacts">
+              <div class="contacts-header">
                 <ul class="site-auth">
                   <li>
                     <a class="text link" href="mailto:info@devstudio.com">
@@ -89,6 +89,126 @@
       </div>
     </header>
 
+    <main>
+      <!-- Герой -->
+
+      <section class="hero-container">
+        <h2 class="hero-title">
+          Эффективные решения <br />
+          для вашего бизнеса
+        </h2>
+
+        <button data-modal-open class="hero-button link">
+          Заказать услугу
+        </button>
+      </section>
+    </main>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <form class="js-speaker-form">
+          <h1 class="title">
+            Оставьте свои данные, мы вам перезвоним
+          </h1>
+          <div class="form-field">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder=" "
+              class="form-input"
+            />
+            <label for="name" class="form-lable">Имя</label>
+
+            <svg class="icon-formbox">
+              <use href="./img/symbol-defs2.svg#icon-person-black"></use>
+            </svg>
+          </div>
+
+          <div class="form-field">
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder=" "
+              class="form-input"
+            />
+            <label for="tel" class="form-lable">Телефон</label>
+
+            <svg class="icon-formbox">
+              <use href="./img/symbol-defs2.svg#icon-phone-black"></use>
+            </svg>
+          </div>
+
+          <div class="form-field">
+            <input
+              type="email"
+              name="email"
+              id="email-form"
+              placeholder=" "
+              class="form-input"
+            />
+            <label for="email-form" class="form-lable">Почта</label>
+
+            <svg class="icon-formbox">
+              <use href="./img/symbol-defs2.svg#icon-email-black"></use>
+            </svg>
+          </div>
+
+          <div class="form-field">
+            <textarea
+              placeholder=" "
+              name="textarea"
+              id="textarea"
+              cols="10"
+              rows="10"
+              class="input-comments"
+            ></textarea>
+            <label for="textarea" class="comment-lable">Комментарий</label>
+          </div>
+
+          <div class="form-conditions">
+            <label for="policy" class="policy-lable">
+              <input
+                type="checkbox"
+                name="policy"
+                id="policy"
+                class="checkbox"
+              />
+              <span class="icon-checked"></span>Соглашаюсь с рассылкой и
+              принимаю
+              <a class="contract-conditions" href="">
+                Условия договора</a
+              ></label
+            >
+          </div>
+
+          <div class="form-button">
+            <button class="accept-button">Принять</button>
+          </div>
+        </form>
+
+        <button data-modal-close class="close-button">
+          <svg class="icon-close">
+            <use href="./img/symbol-defs2.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script>
+      (() => {
+        document
+          .querySelector(".js-speaker-form")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`)
+            );
+            e.currentTarget.reset();
+          });
+      })();
+    </script>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
