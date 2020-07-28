@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <!-- логотип -->
+
+      <div class="container">
+        <div class="page-logo">
+          <nav class="flex-type">
+            <a class="link" href="./index.html">
+              <span class="logo"
+                ><span class="logo-colored">Web</span> Studio
+              </span></a
+            >
+
+            <button
+              class="mobile-menu-button"
+              type="button"
+              aria-expanded="false"
+              aria-controls="menu-container"
+              data-menu-button
+            >
+              <svg
+                width="40"
+                height="40"
+                aria-label="Переключатель мобильного меню"
+              >
+                <use
+                  class="icon-close-mobile-menu"
+                  href="./img/symbol-defs2.svg#icon-close_40px"
+                ></use>
+                <use
+                  class="icon-mobile-menu"
+                  href="./img/symbol-defs2.svg#icon-menu_40px"
+                ></use>
+              </svg>
+            </button>
+
+            <div class="menu-container" id="menu-container" data-menu>
+              <div class="navigation">
+                <ul class="site-nav">
+                  <li>
+                    <a class="link" href="./index.html">
+                      <span class="current-page">Студия</span></a
+                    >
+                  </li>
+                  <li>
+                    <a class="link" href="./portfolio.html"> Портфолио </a>
+                  </li>
+                  <li><a href="" class="link">Контакты</a></li>
+                </ul>
+              </div>
+
+              <div class="contacts-header">
+                <ul class="site-auth">
+                  <li>
+                    <a class="text link" href="mailto:info@devstudio.com">
+                      <svg class="icon-mail">
+                        <use href="./img/symbol-defs2.svg#icon-envelope"></use>
+                      </svg>
+                      info@devstudio.com
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text link" href="tel:380961111111"
+                      ><svg class="icon-vector">
+                        <use
+                          href="./img/symbol-defs2.svg#icon-vector"
+                        ></use></svg
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- скрытый зоголовок  -->
+      <h1 class="visually-hidden">Портфолио</h1>
+      <div class="portfolio">
+        <ul class="portfolio-buttons container">
+          <li><button type="button" class="portfolio-button">Все</button></li>
+          <li>
+            <button type="button" class="portfolio-button">Веб-сайты</button>
+          </li>
+          <li>
+            <button type="button" class="portfolio-button">Приложения</button>
+          </li>
+          <li>
+            <button type="button" class="portfolio-button">Дизайн</button>
+          </li>
+          <li>
+            <button type="button" class="portfolio-button">Маркетинг</button>
+          </li>
+        </ul>
+
+        <ul class="features container">
+          <li class="portfolio-card">
+            <a class="link" href="">
+              <div class="pin">
+                <img
+                  srcset="
+                    ./img/portfolio/techno_mobile.jpg      480w,
+                    ./img/portfolio/techno_mobile@2x.jpg   960w,
+                    ./img/portfolio/techno_tablet.jpg      768w,
+                    ./img/portfolio/techno_tablet@2x.jpg  1536w,
+                    ./img/portfolio/techno_desktop.jpg    1200w,
+                    ./img/portfolio/techno_desktop@2x.jpg 2400w
+                  "
+                  src="./img/portfoio/techno_mobile.jpg"
+                  alt="карточки людей"
+                  width="450"
+                  ;
+                />
+                <p class="description text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Animi, magnam.
+                </p>
+              </div>
+              <h2 class="subtitle">Технокряк</h2>
+              <p class="text">Веб-сайт</p>
+              <!-- <div class="card-overlay"> -->
+
+              <!-- </div> -->
+            </a>
+          </li>
+
+          <li class="portfolio-card">
+            <a class="link" href="">
+              <div class="pin">
+                <img
+                  srcset="
+                    ./img/portfolio/basketball_mobile.jpg      480w,
+                    ./img/portfolio/basketball_mobile@2x.jpg   960w,
+                    ./img/portfolio/basketball_tablet.jpg      768w,
+                    ./img/portfolio/basketball_tablet@2x.jpg  1536w,
+                    ./img/portfolio/basketball_desktop.jpg    1200w,
+                    ./img/portfolio/basketball_desktop@2x.jpg 2400w
+                  "
+                  src="./img/portfoio/basketball_mobile.jpg"
+                  alt="баскетболсты"
+                  width="450"
+                  ;
+                />
+                <p class="description text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Animi, magnam.
+                </p>
+              </div>
+              <h2 class="subtitle">Постер New Orlean vs Golden Star</h2>
+              <p class="text">Дизайн</p>
+            </a>
+          </li>
+
+          <li class="portfolio-card">
+            <a class="link" href="">
+              <div class="pin">
+                <img
+                  srcset="
+                    ./img/portfolio/Seafood_mobile.jpg      480w,
+                    ./img/portfolio/Seafood_mobile@2x.jpg   960w,
+                    ./img/portfolio/Seafood_tablet.jpg      768w,
+                    ./img/portfolio/Seafood_tablet@2x.jpg  1536w,
+                    ./img/portfolio/Seafood_desktop.jpg    1200w,
+                    ./img/portfolio/Seafood_desktop@2x.jpg 2400w
+                  "
+                  src="./img/portfoio/Seafood_mobile.jpg"
+                  alt="товарный знак"
+                  width="450"
+                  ;
+                />
+                <p class="description text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Animi, magnam.
+                </p>
+              </div>
+              <h2 class="subtitle">Ресторан Seafood</h2>
+              <p class="text">Приложение</p>
+            </a>
+          </li>
+
+          <li class="portfolio-card">
+            <a class="link" href="">
+              <div class="pin">
+                <img
+                  srcset="
+                    ./img/portfolio/headphones_mobile.jpg      480w,
+                    ./img/portfolio/headphones_mobile@2x.jpg   960w,
+                    ./img/portfolio/headphones_tablet.jpg      768w,
+                    ./img/portfolio/headphones_tablet@2x.jpg  1536w,
+                    ./img/portfolio/headphones_desktop.jpg    1200w,
+                    ./img/portfolio/headphones_desktop@2x.jpg 2400w
+                  "
+                  src="./img/portfoio/headphones_mobile.jpg"
+                  alt="наушники"
+                  width="450"
+                  ;
+                />
+                <p class="description text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Animi, magnam.
+                </p>
+              </div>
+              <h2 class="subtitle">Проект Prime</h2>
+              <p class="text">Маркетинг</p>
+            </a>
+          </li>
+
+          <li class="portfolio-card">
+            <a class="link" href="">
+              <div class="pin">
+                <img
+                  srcset="
+                    ./img/portfolio/paperbox_mobile.jpg      480w,
+                    ./img/portfolio/paperbox_mobile@2x.jpg   960w,
+                    ./img/portfolio/paperbox_tablet.jpg      768w,
+                    ./img/portfolio/paperbox_tablet@2x.jpg  1536w,
+                    ./img/portfolio/paperbox_desktop.jpg    1200w,
+                    ./img/portfolio/paperbox_desktop@2x.jpg 2400w
+                  "
+                  src="./img/portfoio/paperbox_mobile.jpg"
+                  alt="бумажные коробки"
+                  width="450"
+                  ;
+                />
+                <p class="description text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Animi, magnam.
+                </p>
+              </div>
+              <h2 class="subtitle">Проект Boxes</h2>
+              <p class="text">Приложение</p>
+            </a>
+          </li>
+
+          <li class="portfolio-card">
+            <a class="link" href="">
+              <div class="pin">
+                <img
+                  srcset="
+                    ./img/portfolio/display_mobile.jpg      480w,
+                    ./img/portfolio/display_mobile@2x.jpg   960w,
+                    ./img/portfolio/display_tablet.jpg      768w,
+                    ./img/portfolio/display_tablet@2x.jpg  1536w,
+                    ./img/portfolio/display_desktop.jpg    1200w,
+                    ./img/portfolio/display_desktop@2x.jpg 2400w
+                  "
+                  src="./img/portfoio/display_mobile.jpg"
+                  alt="монитор"
+                  width="450"
+                  ;
+                />
+                <p class="description text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Animi, magnam.
+                </p>
+              </div>
+              <h2 class="subtitle">Inspiration has no Borders</h2>
+              <p class="text">Веб-сайт</p>
+            </a>
+          </li>
+
+          <li class="portfolio-card">
+            <a class="link" href="">
+              <div class="pin">
+                <img
+                  srcset="
+                    ./img/portfolio/book_mobile.jpg      480w,
+                    ./img/portfolio/book_mobile@2x.jpg   960w,
+                    ./img/portfolio/book_tablet.jpg      768w,
+                    ./img/portfolio/book_tablet@2x.jpg  1536w,
+                    ./img/portfolio/book_desktop.jpg    1200w,
+                    ./img/portfolio/book_desktop@2x.jpg 2400w
+                  "
+                  src="./img/portfoio/book_mobile.jpg"
+                  alt="книга"
+                  width="450"
+                  ;
+                />
+                <p class="description text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Animi, magnam.
+                </p>
+              </div>
+              <h2 class="subtitle">Издание Limited Edition</h2>
+              <p class="text">Дизайн</p>
+            </a>
+          </li>
+
+          <li class="portfolio-card">
+            <a class="link" href="">
+              <div class="pin">
+                <img
+                  srcset="
+                    ./img/portfolio/lable_mobile.jpg      480w,
+                    ./img/portfolio/lable_mobile@2x.jpg   960w,
+                    ./img/portfolio/lable_tablet.jpg      768w,
+                    ./img/portfolio/lable_tablet@2x.jpg  1536w,
+                    ./img/portfolio/lable_desktop.jpg    1200w,
+                    ./img/portfolio/lable_desktop@2x.jpg 2400w
+                  "
+                  src="./img/portfoio/lable_mobile.jpg"
+                  alt="бирка"
+                  width="450"
+                  ;
+                />
+                <p class="description text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Animi, magnam.
+                </p>
+              </div>
+              <h2 class="subtitle">Проект LAB</h2>
+              <p class="text">Маркетинг</p>
+            </a>
+          </li>
+
+          <li class="portfolio-card">
+            <a class="link" href="">
+              <div class="pin">
+                <img
+                  srcset="
+                    ./img/portfolio/laptop_mobile.jpg      480w,
+                    ./img/portfolio/laptop_mobile@2x.jpg   960w,
+                    ./img/portfolio/laptop_tablet.jpg      768w,
+                    ./img/portfolio/laptop_tablet@2x.jpg  1536w,
+                    ./img/portfolio/laptop_desktop.jpg    1200w,
+                    ./img/portfolio/laptop_desktop@2x.jpg 2400w
+                  "
+                  src="./img/portfoio/laptop_mobile.jpg"
+                  alt="ноутбук"
+                  width="450"
+                  ;
+                />
+                <p class="description text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Animi, magnam.
+                </p>
+              </div>
+              <h2 class="subtitle">Growing Business</h2>
+              <p class="text">Приложение</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="contact-shell">
+          <address class="contacts">
+            <span class="logo">
+              <span class="logo-colored"> Web</span> Studio</span
+            >
+            <div class="location">
+              <span class="location text"
+                >г. Киев, пр-т Леси Украинки, 26
+              </span>
+
+              <a class="link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+
+              <a class="link" href="tel:380961111111">+38 096 111 11 11 </a>
+            </div>
+          </address>
+
+          <div class="connect">
+            <b class="subtitle">присоединяйтесь</b>
+            <ul class="flex-type">
+              <li class="shell">
+                <a
+                  class="social-block"
+                  href="https://www.instagram.com/"
+                  aria-label="Ссылка на Instagram"
+                  ><svg class="social-link">
+                    <use
+                      href="./img/symbol-defs2.svg#icon-instagram"
+                    ></use></svg
+                ></a>
+              </li>
+              <li class="shell">
+                <a
+                  class="social-block"
+                  href="https://twitter.com/explore"
+                  aria-label="Ссылка на Twitter"
+                  ><svg class="social-link">
+                    <use href="./img/symbol-defs2.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="shell">
+                <a
+                  class="social-block"
+                  href="https://www.facebook.com/"
+                  aria-label="Ссылка на Facebook"
+                  ><svg class="social-link">
+                    <use href="./img/symbol-defs2.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="shell">
+                <a
+                  class="social-block"
+                  href="https://www.linkedin.com/feed/"
+                  aria-label="Ссылка на LinkedIn"
+                  ><svg class="social-link">
+                    <use href="./img/symbol-defs2.svg#icon-linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="subscribe">
+          <b class="subtitle">Подпишитесь на рассылку</b>
+          <div class="flex-type">
+            <div class="email-button">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+                class="form-input"
+              />
+              <label for="email" class="form-lable" id="email-label"></label>
+            </div>
+            <a class="footer-button link" href=""
+              >Подписаться
+              <svg class="icon-send">
+                <use href="./img/symbol-defs2.svg#icon-send"></use></svg
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

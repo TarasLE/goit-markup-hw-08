@@ -502,6 +502,7 @@
   visibility: visible;
   opacity: 1;
   transition: opacity 250ms $timing-function;
+  overflow-y: scroll;
 
   &.is-hidden {
     opacity: 0;
@@ -515,38 +516,72 @@
 
 .modal {
   position: absolute;
-  top: 221px;
+  top: 93px;
   left: 50%;
   transform: translate(-50%) scale(1);
   transition: transform 250ms $timing-function;
-  width: 448px;
-  height: 501px;
+  width: 370px;
+
+  height: auto;
   padding: 40px;
   background-color: $--primary-white-color;
 
   .title {
     font-size: 20px;
-    line-height: 1.15;
+    // line-height: 1.15;
+    line-height: 1.5;
+
     margin-right: auto;
     margin-left: auto;
     margin-top: 0;
     margin-bottom: 30px;
   }
+
+  @media (min-width: 768px) {
+    top: 208px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 448px;
+    top: 221px;
+  }
 }
+
+// .js-speaker-form {
+//   &:first-child {
+//     margin-bottom: 28px;
+//   }
+// }
 
 .form-field {
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-bottom: 28px;
 
-  &:not(:last-child) {
-    margin-bottom: 28px;
+  &:nth-child(5n) {
+    margin-bottom: 20px;
   }
 
-  &:nth-last-child(1) {
-    margin-bottom: 25px;
-  }
+  // &:not(:last-child) {
+  //   margin-bottom: 0;
+  // }
 
+  // &:last-child {
+  //   margin-bottom: 30px;
+  // }
+
+  // &:nth-last(2n + 1) {
+  //   margin-bottom: 0px;
+  // }
+
+  // &:not(:last-child) {
+  //   margin-bottom: 28px;
+  // }
+
+  // &:nth-first-child(2) {
+  //   margin-top: 30px;
+  // }
   input {
     height: 36px;
   }
@@ -624,7 +659,11 @@
 
 .contract-conditions {
   color: $--text-accent-color;
-  margin-left: 5px;
+  margin-left: 3px;
+
+  @media (min-width: 1200px) {
+    margin-left: 5px;
+  }
 }
 
 .close-button {
@@ -663,21 +702,30 @@
 }
 
 .policy-lable {
+  width: max-content;
   display: flex;
+  flex-wrap: nowrap;
+  // flex-direction: row;
   align-items: center;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
+
+  @media (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .icon-checked {
   display: flex;
+  // flex-wrap: nowrap;
   width: 16px;
   height: 15px;
   border: 2px solid $--text-title-color;
   border-radius: 2px;
-  margin-right: 8.5px;
-  margin-left: 12px;
+  margin-right: 8px;
+  margin-left: 0px;
 }
 
 .checkbox:checked + .icon-checked {
