@@ -16,7 +16,7 @@
   @media (min-resolution: 2dppx) {
     background-image: $--hero-background-image-gradient,
       url(../img/header_mobile@2x.jpg);
-    border: solid tomato;
+    // border: solid tomato;
     // background-size: min($numbers: 480px);
     background-size: min($numbers: 480px);
     // width: 100%;
@@ -30,7 +30,7 @@
     @media (min-resolution: 2dppx) {
       background-image: $--hero-background-image-gradient,
         url(../img/header_tablet@2x.jpg);
-      border: solid tomato;
+      // border: solid tomato;
       background-size: max($numbers: 768px);
     }
   }
@@ -42,7 +42,7 @@
     @media (min-resolution: 2dppx) {
       background-image: $--hero-background-image-gradient,
         url(../img/header_desktop@2x.jpg);
-      border: solid tomato;
+      // border: solid tomato;
       // background-size: cover;
       background-size: max($numbers: 1600px);
     }
