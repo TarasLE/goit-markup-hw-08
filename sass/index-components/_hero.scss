@@ -1,4 +1,6 @@
 .hero-container {
+  // border: solid tomato;
+  // overflow: hidden;
   // max-width: 1600px;
   display: block;
   text-align: center;
@@ -43,7 +45,7 @@
       background-image: $--hero-background-image-gradient,
         url(../img/header_desktop@2x.jpg);
       // border: solid tomato;
-      // background-size: cover;
+      // background-size: contain;
       background-size: max($numbers: 1600px);
     }
   }
