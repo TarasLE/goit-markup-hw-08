@@ -17,7 +17,7 @@ img {
 // HT8
 .container {
   // display: inline-flex;
-  // width: 1170px;
+  // min-width: 300px;
   padding-left: 15px;
   padding-right: 15px;
   background-color: $--primary-white-color;
@@ -28,6 +28,7 @@ img {
 
   @media (max-width: 767px) {
     max-width: 450px;
+    // min-width: 300px;
   }
 
   @media (min-width: 768px) {
