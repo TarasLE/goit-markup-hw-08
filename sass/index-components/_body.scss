@@ -1,15 +1,11 @@
 //-------------ADVANTAGE-BLOCK------------//
 .advantage {
-  // @extend %block-state;
-
   .container {
     margin-top: 60px;
     margin-bottom: 60px;
     // margin-bottom: 0;
 
     @media (min-width: 768px) {
-      // padding-left: 0;
-      // padding-left: 0;
       width: 738px;
       display: flex;
       flex-wrap: wrap;
