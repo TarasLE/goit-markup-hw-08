@@ -1,5 +1,7 @@
 .hero-container {
   // border: solid tomato;
+  // width: 100%;
+  // height: 100%;
   // overflow: hidden;
   // max-width: 1600px;
   display: block;
@@ -7,23 +9,28 @@
   // justify-content: center;
   // justify-items: center;
   background-color: $--primary-text-color;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
   background-image: $--hero-background-image-gradient,
     url(../img/header_mobile.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  // background-size: 100%;
+  // background-size: min($numbers: 100%);
+  // background-size: min($numbers: 480px);
+  // background-size: contain;
 
   @media (min-resolution: 2dppx) {
     background-image: $--hero-background-image-gradient,
       url(../img/header_mobile@2x.jpg);
     // border: solid tomato;
-    // background-size: min($numbers: 480px);
     background-size: min($numbers: 480px);
     // width: 100%;
     // height: auto;
   }
+
+  // @media (max-width: 767px) {
+  //   background-size: 100%;
+  // }
 
   @media (min-width: 768px) {
     background-image: $--hero-background-image-gradient,
