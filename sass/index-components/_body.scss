@@ -189,8 +189,8 @@
 
   .container {
     padding-bottom: 60px;
-    padding-left: 0;
-    padding-right: 0;
+    // padding-left: 0;
+    // padding-right: 0;
     background-color: $--background-icon-color;
     margin-top: 30px;
 
@@ -244,9 +244,12 @@
 }
 
 .team-card {
+  // display: block;
   background-color: $--primary-white-color;
   box-shadow: $team-box-shadow;
   border-radius: $team-border-radius;
+  // justify-items: center;
+  // justify-content: center;
 
   .flex-type {
     padding: 0;
